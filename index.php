@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
-    <title>Test Internet Speed</title>
+    <title>Connection Quality</title>
     <style media="screen">
       .mobilesOnly {
         visibility:hidden;
@@ -15,10 +15,7 @@
   <body>
     <div class="well" >
         <?php
-    
-
-        include_once 'NetTest.php';
-
+            include_once 'NetTest.php';
             $netTest = new NetTest();
             $netTest->setSensitivity(isset($_GET['sensitivity']) ? $_GET['sensitivity'] : 50);
             echo "Connection Status : " . $netTest->getSpeedName();
