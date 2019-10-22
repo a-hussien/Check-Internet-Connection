@@ -1,6 +1,4 @@
-﻿<?php
-
-
+<?php
 class NetTest{
     const CHECK_ONE_TIME = 1;
     const CHECK_FIVE_TIME = 5;
